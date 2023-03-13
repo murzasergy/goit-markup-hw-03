@@ -7,13 +7,11 @@
   --footer-color-logo: #f4f4fd;
   --footer-color-text: #e7e9fc;
   --background-color-section: #f4f4fd;
+  --card-set-gap: 24px;
 }
 body {
   font-family: "Roboto", sans-serif;
   color: var(--main-color-text);
-  
-  
-
 
 }
   /* * { border: 5px solid green;} */
@@ -42,7 +40,7 @@ body {
  }
  .container {
   width: 1158px;
-  /* outline: 4px solid chartreuse; */
+  outline: 4px solid chartreuse;
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -257,8 +255,7 @@ ul {
   letter-spacing: 0.02em;
   color: var(--title-color);
   
- 
-}
+ }
 .card-text {
   font-weight: 400;
   font-size: 16px;
@@ -268,8 +265,8 @@ ul {
   order: 1;
   flex-grow: 0;
   text-align: center;
-
- }.card-text-container {
+ }
+ .card-text-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -331,6 +328,22 @@ ul {
   color: var(--white-color);
 }
 /* My Projects */
+.card-set {
+  /* outline: 1px solid tomato; */
+  padding: 0;
+  margin: 0;
+  list-style: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc( -1 * var(--card-set-gap));
+  margin-top: -48px;
+}
+.card-set > .card-list-item {
+outline: 1px solid turquoise;
+flex-basis: calc(100% / 3 - 24px);
+margin-left: var(--card-set-gap);
+margin-top: 48px;
+}
 
 .card-title {
   font-weight: 500;
@@ -340,8 +353,32 @@ ul {
   color: var(--title-color);
 }
 .portfolio-text {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--main-color-text);
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  }
+  .card-title {
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--title-color);
+
+  }
+  .card-text-container-portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
