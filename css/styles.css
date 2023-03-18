@@ -64,6 +64,7 @@ body {
 .contacts-list {
   display: flex;
   list-style: none;
+  padding-left: 0px;
 }
 .header-list-item:not(:last-child) {
   margin-right: 40px;
@@ -88,7 +89,7 @@ gap: 40px;
   color: var(--title-color);
 }
 
-Navigation
+/* Navigation */
 .nav-link {
   display: block;
   padding-top: 24px;
@@ -180,10 +181,11 @@ img {
   border-radius: 4px;
   cursor: pointer;
   width: auto;
-  height: 56px;
+  padding: 16px 32px;
   display: block;
   margin: 0px auto;
   border: none;
+
 }
 .btn-main:hover {
   background-color: var(--hover-color);
